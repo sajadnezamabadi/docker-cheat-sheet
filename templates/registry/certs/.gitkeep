@@ -1,0 +1,4 @@
+# This directory will contain SSL certificates
+# Run setup.sh to create self-signed certificates
+# For production, use proper CA-signed certificates
+

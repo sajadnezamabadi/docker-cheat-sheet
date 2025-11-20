@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nginx Docker Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #009639 0%, #007a2f 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #009639;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .status {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #28a745;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #009639;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .info-box strong {
+            color: #009639;
+        }
+        .features {
+            margin-top: 30px;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #009639;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #009639;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #007a2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="status">✓ Running</span>
+        <h1>Nginx Docker Demo</h1>
+        <p style="font-size: 1.2em; color: #333; margin-bottom: 30px;">
+            Welcome to Nginx running in Docker! 🚀
+        </p>
+        
+        <div class="info-box">
+            <strong>Web Server:</strong> Nginx<br>
+            <strong>Version:</strong> Latest Alpine<br>
+            <strong>Port:</strong> 80<br>
+            <strong>Status:</strong> Active and Running
+        </div>
+        
+        <div class="features">
+            <h3>Features:</h3>
+            <div class="feature">
+                <strong>✓ Reverse Proxy Ready</strong><br>
+                Configured for proxying requests to backend services
+            </div>
+            <div class="feature">
+                <strong>✓ Static File Serving</strong><br>
+                Optimized for serving static files efficiently
+            </div>
+            <div class="feature">
+                <strong>✓ Gzip Compression</strong><br>
+                Enabled for better performance
+            </div>
+            <div class="feature">
+                <strong>✓ Health Check Endpoint</strong><br>
+                Available at /health
+            </div>
+        </div>
+        
+        <a href="/health" class="btn">Health Check</a>
+    </div>
+</body>
+</html>
+
