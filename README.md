@@ -28,16 +28,23 @@ docker-cheat-sheet-commands/
 │       ├── advanced_networking.md       # Overlay networks, service discovery, load balancing
 │       ├── microservices.md             # Multi-container/microservices example, service mesh
 │       ├── dockerignore_examples.md     # .dockerignore examples per language
-│       └── registry_setup.md            # Private registry, Harbor
+│       ├── registry_setup.md            # Private registry, Harbor
+│       └── docker_swarm.md              # Docker Swarm orchestration
 │
 ├── templates/
 │   ├── django/              # Django Docker setup
 │   ├── fastapi/             # FastAPI Docker setup
 │   ├── node/                # Node.js Docker setup
+│   ├── go/                  # Go REST API Docker setup
+│   ├── rust/                # Rust REST API Docker setup
 │   ├── redis/               # Redis Docker setup
 │   ├── postgres/            # PostgreSQL Docker setup
 │   ├── nginx/               # Nginx Docker setup
-│   └── registry/            # Docker Registry setup
+│   ├── registry/            # Docker Registry setup
+│   ├── portainer/           # Portainer web UI for Docker
+│   └── swarm/               # Docker Swarm examples
+│       ├── single-node/     # Single-node Swarm setup
+│       └── multi-node/      # Multi-node Swarm setup
 │
 ├── examples/
 │   ├── dockerfile_multi_stage.md        # Multi-stage build examples
@@ -84,10 +91,14 @@ Ready-to-use Docker configurations for popular technologies:
 - **Django**: Full Django setup with PostgreSQL
 - **FastAPI**: FastAPI application with database
 - **Node.js**: Node.js application template
+- **Go**: Go REST API with PostgreSQL
+- **Rust**: Rust REST API with PostgreSQL
 - **Redis**: Redis server configuration
 - **PostgreSQL**: PostgreSQL database setup
 - **Nginx**: Nginx reverse proxy configuration
 - **Registry**: Docker Registry with authentication and TLS
+- **Portainer**: Web-based Docker management UI
+- **Swarm**: Docker Swarm orchestration (single-node and multi-node examples)
 
 Each template includes:
 - `Dockerfile` - Container image definition
@@ -124,6 +135,9 @@ Complete microservices example with service mesh. See [microservices.md](guides/
 
 #### Registry Setup
 Private Docker registry and Harbor setup. See [registry_setup.md](guides/advanced/registry_setup.md)
+
+#### Docker Swarm
+Complete Docker Swarm orchestration guide with single-node and multi-node examples. See [docker_swarm.md](guides/advanced/docker_swarm.md)
 
 ##  Examples
 
