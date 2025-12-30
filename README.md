@@ -11,8 +11,6 @@ docker-cheat-sheet-commands/
 │   ├── install.sh          # Docker installation script
 │   ├── uninstall.sh         # Docker uninstallation script
 │   ├── docker_clean.sh      # Clean up Docker resources
-│   ├── docker_logs.sh       # View container logs
-│   ├── docker_exec.sh       # Execute commands in containers
 │   └── docker_backup.sh     # Backup Docker volumes
 │
 ├── cheatsheets/
@@ -66,12 +64,6 @@ chmod +x scripts/*.sh
 ```bash
 # Clean up Docker resources
 ./scripts/docker_clean.sh
-
-# View container logs
-./scripts/docker_logs.sh <container_name>
-
-# Execute command in container
-./scripts/docker_exec.sh <container_name> [command]
 ```
 
 ##  Cheatsheets
@@ -173,34 +165,6 @@ Cleans up unused Docker resources (containers, images, volumes, networks, and bu
 ```bash
 chmod +x scripts/docker_clean.sh
 ./scripts/docker_clean.sh
-```
-
-### docker_logs.sh
-View logs from Docker containers.
-
-**Usage:**
-```bash
-chmod +x scripts/docker_logs.sh
-
-# View logs
-./scripts/docker_logs.sh <container_name>
-
-# Follow logs in real-time
-./scripts/docker_logs.sh <container_name> --follow
-```
-
-### docker_exec.sh
-Execute commands in running containers.
-
-**Usage:**
-```bash
-chmod +x scripts/docker_exec.sh
-
-# Enter container shell
-./scripts/docker_exec.sh <container_name>
-
-# Execute specific command
-./scripts/docker_exec.sh <container_name> python manage.py shell
 ```
 
 ### docker_backup.sh
